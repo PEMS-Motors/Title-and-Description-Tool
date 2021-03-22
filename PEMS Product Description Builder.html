@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8"/>
+
+    <title>Revised Product Builder</title>
+
+    <script src='Products.js'></script>
+    <script src='ProductsHandler.js'></script>
+    <script src='Preview.js' defer></script>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+  	<link rel="stylesheet" href="templates/css/bootstrap-dashboard.css">
+  	<link rel="stylesheet" href="templates/fa/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="templates/css/dashboard.css?2015-09-03">
+
+  </head>
+  <body>
+    <div id='controls'>
+      <input type='file' id='files' />
+      <br><button onclick='DescriptionBuilder_PEMS.LoadFile();'>Load</button>
+      <br><button onclick='DescriptionBuilder_PEMS.Compile();'>Compile</button>
+      <hr>
+      <br><button onclick='DescriptionBuilder_PEMS.Export();'>Export</button> Products JSON Database
+      <br><button onclick='DescriptionBuilder_PEMS.ExportPEMSWebTitlesAndDescriptions();'>Export</button> Titles and Descriptions (PEMS Web)
+      <br><button onclick='ExportPreview();'>Export</button> HTML Preview
+
+    </div>
+    <hr>
+    <div id='preview' class='pemsatl'>
+    </div>
+
+  </body>
+</html>

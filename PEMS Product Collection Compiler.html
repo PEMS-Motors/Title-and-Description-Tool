@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>PEMS Product Collection Compiler</title>
+
+    <script src='ProductsListCompiler.js'></script>
+
+  </head>
+
+  <body>
+    <input id='files' type='file' multiple />
+    <br><button onclick='LoadFiles();'>Load</button>
+    <br><button onclick='Compile();'>Compile</button>
+    <br><button onclick='Export();'>Export</button>
+    <h3>Instructions:</h3>
+    <p>Browse and select all files to compile into a single dictionary object</p>
+    <p>Click "Load" to load files into memory</p>
+    <p>Click "Compile" to assemble the dictionary object</p>
+    <p>Click "Export" to save JSON file.</p>
+    <p>Load this JSON file in <a href='PEMS Product Description Builder.html' target='_blank'>PEMS Product Description Builder</a></p>
+    <p>Use console commands there to assemble descriptions.</p>
+
+  </body>
+</html>
